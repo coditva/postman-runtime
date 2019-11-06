@@ -146,7 +146,10 @@ runner.run(collection, {
 
     // *note* Not implemented yet.
     // In the future, this will be used to read certificates from the OS keychain.
-    systemCertificate: function() {}
+    systemCertificate: function() {},
+
+    // Whether to serialise console logs using `teleport-javascript` serialisation
+    serialiseConsole = false
 }, function (err, run) {
     console.log('Created a new Run!');
 
